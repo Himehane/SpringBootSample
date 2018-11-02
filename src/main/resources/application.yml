@@ -9,6 +9,9 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+  output:
+    ansi:
+      enabled: always
 server:
   port: 8080
   context-path: /
