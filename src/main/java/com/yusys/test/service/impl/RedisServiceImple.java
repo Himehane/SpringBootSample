@@ -18,7 +18,7 @@ public class RedisServiceImple implements RedisService{
     public String writerRedis(String id) {
 		StringBuffer sb = new StringBuffer();
 		Date now = new Date();
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		sb.append(format.format(now));
 		return sb.toString();
     }
