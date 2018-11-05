@@ -1,7 +1,4 @@
-/**
- * 
- */
-package com.yusys.test;
+package com.springboot.demo;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +21,7 @@ public class Application {
 		// SpringApplication.run(Application.class, args);
 		// 第二种方式，运行SpringBoot项目
 		SpringApplication springApplication = new SpringApplication(Application.class);
-		// 设置关闭Banner横幅
+		// 设置Banner横幅
 		springApplication.setBannerMode(Banner.Mode.CONSOLE);
 		springApplication.run(args);
 	}

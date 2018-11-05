@@ -1,4 +1,4 @@
-package com.yusys.test.config;
+package com.springboot.demo.config;
 
 
 import org.springframework.cache.CacheManager;

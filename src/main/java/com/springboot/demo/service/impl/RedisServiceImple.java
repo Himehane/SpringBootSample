@@ -1,9 +1,9 @@
-package com.yusys.test.service.impl;
+package com.springboot.demo.service.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.yusys.test.service.RedisService;
+import com.springboot.demo.service.RedisService;
 
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;

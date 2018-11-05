@@ -1,7 +1,7 @@
-package com.yusys.test.controller.rest;
+package com.springboot.demo.controller.rest;
 
 
-import com.yusys.test.service.RedisService;
+import com.springboot.demo.service.RedisService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
