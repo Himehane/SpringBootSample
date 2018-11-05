@@ -3,4 +3,4 @@ target
 .project
 .settings
 .vscode
-application.yml
+src/main/resources/banner.txt
