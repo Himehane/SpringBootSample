@@ -4,3 +4,4 @@ target
 .settings
 .vscode
 src/main/resources/banner.txt
+/test/
