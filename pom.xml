@@ -15,6 +15,8 @@
 	<properties>
 		<!-- 定义更改JDK版本属性 -->
 		<java.version>1.8</java.version>
+		<pagehelper.version>1.2.9</pagehelper.version>
+		<druid.version>1.1.10</druid.version>
 	</properties>
 
 	<!-- 配置依赖关系 -->
@@ -40,9 +42,20 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-redis</artifactId>
-			<version>1.4.7.RELEASE</version>
+			<!-- 1.4以后artifactId 为 spring-boot-starter-data-redis -->
+			<!-- <artifactId>spring-boot-starter-redis</artifactId> -->
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+		<dependency>
+    		<groupId>com.github.pagehelper</groupId>
+   			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>${pagehelper.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid.version}</version>
+  		</dependency>
 	</dependencies>
 
 </project>

@@ -1,4 +1,4 @@
-target
+target/
 .classpath
 .project
 .settings
@@ -85,3 +85,7 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+# IDEA #
+.idea/
+*.iml
