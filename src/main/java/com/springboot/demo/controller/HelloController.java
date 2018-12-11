@@ -20,6 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 public class HelloController {
 
+	protected static final Logger log = LoggerFactory.getLogger(HelloController.class);
 	@Autowired
 	private UserService userService;
 
@@ -37,6 +38,7 @@ public class HelloController {
 	 */
 	@GetMapping("/test/redirect")
 	public ModelAndView redirectModelAndView(RedirectAttributes attributes) {
+		log.info("enter redirectModelAndView Method");
 		ModelAndView mav = new ModelAndView("redirect:/redirect/getParam");
 		attributes.addFlashAttribute("param", "Hello StringBoot!");
 		return mav;
