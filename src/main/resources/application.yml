@@ -30,6 +30,9 @@ spring:
       suffix: .html
   resources:
     static-locations: classpath:/static
+logging:
+    level:
+        com.springboot.demo: INFO
 server:
   port: 8080
   context-path: /
