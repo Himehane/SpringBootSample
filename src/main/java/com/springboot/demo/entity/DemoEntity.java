@@ -12,6 +12,7 @@ import org.springframework.data.solr.core.mapping.SolrDocument;
 public class DemoEntity {
 
     @Id
+    @Field("id")
     private String id;
     @Column
     private String dateBase;
