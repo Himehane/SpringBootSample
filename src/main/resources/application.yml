@@ -38,7 +38,7 @@ server:
   context-path: /
   session:
     timeout: 1800
-    mybatis:
+mybatis:
     type-aliases-package: com.springboot.demo.entity
     mapper-locations: classpath:mapper/*.xml
 mapper:
