@@ -19,6 +19,17 @@ spring:
   output:
     ansi:
       enabled: always
+  data:
+    solr:
+      host: http://127.0.0.1:8080/solr
+      repositories:
+            enabled: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  resources:
+    static-locations: classpath:/static
 server:
   port: 8080
   context-path: /
