@@ -21,7 +21,7 @@ spring:
       enabled: always
   data:
     solr:
-      host: http://127.0.0.1:8080/solr
+      host: http://127.0.0.1:8983/solr
       repositories:
             enabled: true
   mvc:
