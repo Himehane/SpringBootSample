@@ -18,7 +18,6 @@ public abstract class BaseEntityServiceImpl<T> implements BaseEntityService<T>{
     @Autowired
 	private Mapper<T> mapper;
 	
-	@SuppressWarnings("unused")
     private Class<T> entityClass;
 
     @SuppressWarnings("unchecked")
