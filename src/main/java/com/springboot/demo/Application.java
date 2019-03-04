@@ -2,7 +2,10 @@ package com.springboot.demo;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @Description:
@@ -11,6 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version
  */
 @SpringBootApplication
+@EnableAutoConfiguration
+@MapperScan(basePackages = "com.springboot.demo.mapper")
 public class Application {
 
 	/**
