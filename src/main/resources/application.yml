@@ -39,12 +39,12 @@ server:
   session:
     timeout: 1800
 mybatis:
-    type-aliases-package: com.springboot.demo.entity
-    mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.springboot.demo.entity
+  mapper-locations: classpath:mapper/*.xml
 mapper:
-    mappers: tk.mybatis.mapper.common.Mapper
-    not-empty: false
-    identity: MYSQL
+  mappers: tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
 pagehelper:
   helperDialect: mysql
   offsetAsPageNum: true
