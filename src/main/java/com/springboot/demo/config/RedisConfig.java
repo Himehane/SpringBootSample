@@ -1,7 +1,7 @@
 package com.springboot.demo.config;
 
-
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 @EnableCaching
-public class RedisConfig{
+public class RedisConfig extends CachingConfigurerSupport{
 
     /**
      * RedisTemplate配置
@@ -31,10 +31,9 @@ public class RedisConfig{
         return template;
     }
     @Bean
-    public CacheManager cacheManager(RedisTemplate<Object,Object> redisTemplate){
-        RedisCacheManager redisCacheManager = new RedisCacheManager(redisTemplate);
-        redisCacheManager.setUsePrefix(true);
-        redisCacheManager.setDefaultExpiration(1800L);
+    public CacheManager cacheManager(RedisConnectionFactory connectionFactory){
+        //2.0后使用RedisCacheManager.builder().build();创建RedisCacheManager
+        RedisCacheManager redisCacheManager = RedisCacheManager.builder(connectionFactory).build();
         return redisCacheManager;
     }
 }

@@ -8,14 +8,14 @@ import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.data.solr.core.mapping.SolrDocument;
 
 @Table(name ="demo")
-@SolrDocument(solrCoreName = "demo")
+@SolrDocument(collection = "demo")
 public class DemoEntity {
 
     @Id
     @Field("id")
     private String id;
     @Column
-    private String dateBase;
+    private String dateBaseField;
     @Field
     private String solrField;
 
@@ -34,17 +34,17 @@ public class DemoEntity {
     }
 
     /**
-     * @return the dateBase
+     * @return the dateBaseField
      */
-    public String getDateBase() {
-        return dateBase;
+    public String getDateBaseField() {
+        return dateBaseField;
     }
 
     /**
-     * @param dateBase the dateBase to set
+     * @param dateBaseField the dateBaseField to set
      */
-    public void setDateBase(String dateBase) {
-        this.dateBase = dateBase;
+    public void setDateBaseField(String dateBaseField) {
+        this.dateBaseField = dateBaseField;
     }
 
     /**

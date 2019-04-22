@@ -35,7 +35,7 @@ public abstract class BaseSolrServiceImpl<T> implements BaseSolrService<T> {
         /* 获取所有的实际类型参数，取第一个*/
 		this.entityClass = (Class<T>)parameterizedType.getActualTypeArguments()[0];
 		SolrDocument annotation =  this.entityClass.getAnnotation(SolrDocument.class);
-		this.collection = annotation.solrCoreName();
+		this.collection = annotation.collection();
 	}
 	
 
